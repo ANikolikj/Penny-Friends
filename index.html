@@ -44,7 +44,7 @@
                             </p>
                         </div>
                     </div>
-                    <button class="button" type='button' onclick="toggleText()"></button>
+                    <button id="btnOne" class="button" type='button' onclick="toggleTextOne()"></button>
                 </div>
                 <div class="grid-container">
                     <div class="item-1">
@@ -64,7 +64,7 @@
         <section>
             <div class="articletext">
                 <p>
-                    <span>Mammas intresse för distansridning </span>smittade tidigt av sig på Emma. 2015 var det dags för första starten. Tillsammans med
+                    <span class="blue">Mammas intresse för distansridning </span>smittade tidigt av sig på Emma. 2015 var det dags för första starten. Tillsammans med
                     mammas trav- och arabkorsning Skywalker
                     skulle hon ta sig igenom fyra mil under
                     sommarens varmaste dag.
@@ -73,7 +73,7 @@
                     och jag var så stolt.
                 </p>
                 <p>
-                    <span>Stolt över framgångarna</span>
+                    <span class="blue">Stolt över framgångarna</span>
                     15 år gammal vann Emma en tävling på fem mil
                     tillsammans med sin häst Saht Dakkhar efter
                     att bara ha känt varandra i två månader. Större
@@ -95,7 +95,7 @@
                     ”Det är inte <br> alltid den snabbaste <br> som vinner!”
                 </p>
                 <p>
-                    <span>Utrustningen</span><br>
+                    <span class="blue">Utrustningen</span><br>
                     Att rida utomhus innebär att man aldrig riktigt
                     vet vilka väderförhållanden man kommer att
                     utsättas för. Det förklarar Emma är en anledning
@@ -137,12 +137,27 @@
             
                 <div class="item-4">
                     <img class="responsive one border-orange border-img" src="img/PF2201_8-9_Privat_emma.jpeg" alt="">
+            
+                    <div id="btnTwo">
+                        <div id="bubble2" class="bubble bbl-2" style='opacity: 0;'>
+                            <p>TID:  Det längsta Emma har suttit på hästryggen är: 8,5 timme.</p>
+                        </div>
+                        <button class="button-2" type='button' onclick="toggleTextTwo()"></button>
+                    </div>                
                     <img class="responsive two border-orange border-img" src="img/PF2201_8-9_Privat_groom.jpeg" alt="">
+                    <div id="btnThree">
+                        <div id="bubble3" class="bubble bbl-3" style='opacity: 0;'>
+                            <p>
+                                DISTANS: Den längsta sträckan Emma ridit är: 10 mil.
+                            </p>
+                        </div>
+                        <button id="btnThree" class="button-2" type='button' onclick="toggleTextThree()"></button>
+                    </div>
                 </div>
             </div>
             <div class="articletext">
                 <p>
-                    <span>Kondition och tålamod</span><br>
+                    <span class="blue">Kondition och tålamod</span><br>
                     Styrka och bra kondition är viktigt hos en
                     bra distanshäst. Det betyder många långa
                     träningspass längs skogs- och grusvägar.
