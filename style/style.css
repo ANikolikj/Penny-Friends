@@ -87,6 +87,16 @@ section {
     color: white;
 }
 
+.subject-2 {
+    font-family: 'Grandstander', sans-serif;
+    padding: 5px 40px;
+    color: white;
+    background-color: #0069AB;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-left: -20px;
+}
+
 .title-1 {
     font-size: 38px;
     font-family: MyFontSunday;
@@ -101,10 +111,10 @@ section {
 .subtitle {
     font-family: 'Grandstander', sans-serif;
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: 300;
     color: #fff;
-    line-height: 1.3rem;
+    line-height: 22px;
     display: inline-block;
     font-variant-caps: small-caps;
     text-align: center;
@@ -113,7 +123,7 @@ section {
 .subtitle .highlight {
     display: inline;
     background: #FBAF33;
-    padding: 0.1rem;
+    padding: 1px;
   }
 
 .subtitle.sub-1 .highlight {
@@ -125,6 +135,14 @@ section {
     -webkit-transform: rotate(-15deg);
     -moz-transform: rotate(-15deg);
     -o-transform: rotate(-15deg);
+    writing-mode: lr-tb;
+}
+
+.rotate-2 {
+    display:inline-block;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
     writing-mode: lr-tb;
 }
 
@@ -192,8 +210,13 @@ section {
     grid-template-columns: repeat(7, 1fr);
   }
 
+  .grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+
   .item-1 {
-      grid-column: 2/5;
+      grid-column: 1/5;
       padding: 5px;
       /* position: relative; */
   }
@@ -206,11 +229,11 @@ section {
   }
 
   .item-3 {
-    grid-column: 1/4;
+    grid-column: 1/5;
 }
 
 .item-4 {
-    grid-column: 4/8;
+    grid-column: 5/9;
     margin: auto;
 }
 
@@ -230,7 +253,11 @@ section {
 }
 
 .border-pink {
-    border: #EE4D93 solid 5px;
+    border: 5px solid #EE4D93;
+}
+
+.border-orange {
+    border: 5px solid #FBAF33;
 }
 
 .border-img {
@@ -243,7 +270,7 @@ section {
 
 .two {
     transform: rotate(-1deg);
-    margin-top: -10px;
+    margin-top: -15px;
 }
 
 /* TEXT */
@@ -264,7 +291,40 @@ section {
 }
 
 .qatext {
-    font-size: 0.7rem;
+    font-size: 14px;
+}
+
+.qatext span {
+    font-weight: bold;
+}
+
+.qatext .heading-s {
+    display: block;
+    font-family: 'MyFontSunday', sans-serif;
+    color: #EE4D93;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+.item-3 .qatext {
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    padding:5px;
+    background:hsla(67, 95%, 95%, 1);
+    border:double 7px #FFDD2E;
+}
+
+p.quote {
+    text-align: center;
+    font-family: 'MyFontSunday', sans-serif;
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+.quote-2 {
+    text-align: center;
+    font-weight: 300;
 }
 
 @-webkit-keyframes pulse {
